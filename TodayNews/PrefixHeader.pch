@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  TodayNews
+//
+//  Created by 云菲 on 2017/7/4.
+//  Copyright © 2017年 Freya. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "MTConstants.h"
+#import <SVProgressHUD.h>
+
+// 1.0
+#define kBaseUrl @"https://lf.snssdk.com"
+#define kMyChannelsUrl @"/article/category/get_subscribed/v1/?aid=13&device_platform=iphone&iid=9390526083&categories=%5B%0A%20%20%22news_hot%22%2C%0A%20%20%22video%22%2C%0A%20%20%22news_local%22%2C%0A%20%20%22news_society%22%2C%0A%20%20%22news_entertainment%22%2C%0A%20%20%22question_and_answer%22%2C%0A%20%20%22%E7%BB%84%E5%9B%BE%22%2C%0A%20%20%22news_tech%22%2C%0A%20%20%22news_car%22%2C%0A%20%20%22news_sports%22%2C%0A%20%20%22news_finance%22%2C%0A%20%20%22news_military%22%2C%0A%20%20%22news_world%22%2C%0A%20%20%22essay_joke%22%2C%0A%20%20%22image_funny%22%2C%0A%20%20%22image_ppmm%22%2C%0A%20%20%22news_health%22%2C%0A%20%20%22positive%22%2C%0A%20%20%22jinritemai%22%2C%0A%20%20%22news_house%22%0A%5D&city=%E5%8C%97%E4%BA%AC"
+#define kNewsDataUrl @"/api/news/feed/v51/?version_code=6.0.3&app_name=news_article&vid=CA26772F-8A57-4B06-87DD-E386D6908A35&device_id=34986529628&channel=App%20Store&resolution=1242*2208&aid=13&ab_version=142299,145817,145251,122834,143763,144447,144502,128825,134128,139277,146110,136112,144823,143636,125174,144446,139852,146158,122948,31211,144298,131207,145502,145585,142799,144711&ab_feature=z2&ab_group=z2&openudid=2602568f6c52443a857d3bea26d8591eec2f109f&live_sdk_version=1.6.5&idfv=CA26772F-8A57-4B06-87DD-E386D6908A35&ac=WIFI&os_version=10.3&ssmix=a&device_platform=iphone&iid=9390526083&ab_client=a1,f2,f7,e1&device_type=iPhone%206%20Plus&idfa=00000000-0000-0000-0000-000000000000&LBS_status=authroize&city=%E5%8C%97%E4%BA%AC&concern_id=&count=20&cp=5f9754Dd2b0D4q1&detail=1&image=1&language=zh-Hans-CN&last_refresh_sub_entrance_interval=6732&latitude=40.04297550216667&loc_mode=1&loc_time=1499275460&longitude=116.2491180113612&max_behot_time=1499268103&refer=1&strict=0&tt_from=load_more"
+#define kAllChannelsUrl @"/article/category/get_extra/v1/"
+
+// 2.0
+#define kMenuBarHeight 40
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="Tjw-KK-4cE" customClass="TNChannelListHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ty4-LP-neG">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="NGd-iw-MyA"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="k2k-M1-KIF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IlY-LG-RF8">
+                    <rect key="frame" x="280" y="10" width="40" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="Zw5-gN-6A9"/>
+                        <constraint firstAttribute="width" constant="40" id="w4U-Rh-S5W"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="编辑">
+                        <color key="titleColor" red="0.90196078430000004" green="0.0" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="完成">
+                        <color key="titleColor" red="0.90196078430000004" green="0.0" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.90196078430000004" green="0.0" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickEditBtn:" destination="Tjw-KK-4cE" eventType="touchUpInside" id="AF0-QD-vvL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ty4-LP-neG" secondAttribute="bottom" id="5hK-dU-szh"/>
+                <constraint firstItem="ty4-LP-neG" firstAttribute="top" secondItem="Tjw-KK-4cE" secondAttribute="top" id="7Bu-YK-OSR"/>
+                <constraint firstItem="IlY-LG-RF8" firstAttribute="top" secondItem="Tjw-KK-4cE" secondAttribute="top" constant="10" id="ALk-gm-L0m"/>
+                <constraint firstAttribute="trailing" secondItem="IlY-LG-RF8" secondAttribute="trailing" id="F9z-7U-vzV"/>
+                <constraint firstItem="ty4-LP-neG" firstAttribute="leading" secondItem="Tjw-KK-4cE" secondAttribute="leading" id="Vfj-Pr-QB0"/>
+                <constraint firstAttribute="bottom" secondItem="IlY-LG-RF8" secondAttribute="bottom" constant="10" id="XE8-po-hgH"/>
+            </constraints>
+            <connections>
+                <outlet property="editBtn" destination="IlY-LG-RF8" id="bpF-e4-KR2"/>
+                <outlet property="titleLab" destination="ty4-LP-neG" id="MWD-IS-x6O"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>

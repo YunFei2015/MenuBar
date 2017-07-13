@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CFB8945E4B0A574300E937A /* libPods-TodayNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7E5131993F3639D549F77 /* libPods-TodayNews.a */; };
+		7C873A851F0B541800C3DDD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873A841F0B541800C3DDD1 /* main.m */; };
+		7C873A881F0B541800C3DDD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873A871F0B541800C3DDD1 /* AppDelegate.m */; };
+		7C873A8E1F0B541800C3DDD1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C873A8C1F0B541800C3DDD1 /* Home.storyboard */; };
+		7C873A901F0B541800C3DDD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C873A8F1F0B541800C3DDD1 /* Assets.xcassets */; };
+		7C873A931F0B541800C3DDD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C873A911F0B541800C3DDD1 /* LaunchScreen.storyboard */; };
+		7C873AE31F0B54A000C3DDD1 /* MTAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AA21F0B54A000C3DDD1 /* MTAPIClient.m */; };
+		7C873AE41F0B54A000C3DDD1 /* NSData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AA51F0B54A000C3DDD1 /* NSData+Additions.m */; };
+		7C873AE51F0B54A000C3DDD1 /* NSDate+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AA81F0B54A000C3DDD1 /* NSDate+MTExtension.m */; };
+		7C873AE61F0B54A000C3DDD1 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AAB1F0B54A000C3DDD1 /* NSString+Additions.m */; };
+		7C873AE71F0B54A000C3DDD1 /* MTVersionCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AAE1F0B54A000C3DDD1 /* MTVersionCheck.m */; };
+		7C873AE81F0B54A000C3DDD1 /* MTHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AB31F0B54A000C3DDD1 /* MTHUDView.m */; };
+		7C873AE91F0B54A000C3DDD1 /* MTImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AB61F0B54A000C3DDD1 /* MTImageSize.m */; };
+		7C873AEA1F0B54A000C3DDD1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AB71F0B54A000C3DDD1 /* README.md */; };
+		7C873AED1F0B54A000C3DDD1 /* MTRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873ABF1F0B54A000C3DDD1 /* MTRefreshFooter.m */; };
+		7C873AEE1F0B54A000C3DDD1 /* MTRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AC11F0B54A000C3DDD1 /* MTRefreshHeader.m */; };
+		7C873AF41F0B54A000C3DDD1 /* MTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AD01F0B54A000C3DDD1 /* MTTextView.m */; };
+		7C873AF51F0B54A000C3DDD1 /* MTWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AD31F0B54A000C3DDD1 /* MTWebVC.m */; };
+		7C873AF61F0B54A000C3DDD1 /* UIButton+touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AD61F0B54A000C3DDD1 /* UIButton+touch.m */; };
+		7C873AF71F0B54A000C3DDD1 /* UIColor+MTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AD91F0B54A000C3DDD1 /* UIColor+MTColor.m */; };
+		7C873AF81F0B54A000C3DDD1 /* UITableViewAdditional.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873ADC1F0B54A000C3DDD1 /* UITableViewAdditional.m */; };
+		7C873AF91F0B54A000C3DDD1 /* UIView+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873ADF1F0B54A000C3DDD1 /* UIView+MTExtension.m */; };
+		7C873AFA1F0B54A000C3DDD1 /* UIViewController+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AE21F0B54A000C3DDD1 /* UIViewController+MTExtension.m */; };
+		7C873B031F0B561000C3DDD1 /* MTMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873AFE1F0B561000C3DDD1 /* MTMenuBar.m */; };
+		7C873B041F0B561000C3DDD1 /* MTMenuBarTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873B011F0B561000C3DDD1 /* MTMenuBarTitleView.m */; };
+		7C873B051F0B561000C3DDD1 /* MTMenuBarTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C873B021F0B561000C3DDD1 /* MTMenuBarTitleView.xib */; };
+		7C873B081F0B7C0600C3DDD1 /* TNHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873B071F0B7C0600C3DDD1 /* TNHomeVC.m */; };
+		7C873B0E1F0B8DDE00C3DDD1 /* TNHomeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873B0D1F0B8DDE00C3DDD1 /* TNHomeService.m */; };
+		7C873B101F0BB4A500C3DDD1 /* https.cer in Resources */ = {isa = PBXBuildFile; fileRef = 7C873B0F1F0BB4A500C3DDD1 /* https.cer */; };
+		7C873B131F0BB77A00C3DDD1 /* TNChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873B121F0BB77A00C3DDD1 /* TNChannel.m */; };
+		7C873B1F1F0BD57A00C3DDD1 /* TNChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873B1C1F0BD57A00C3DDD1 /* TNChannelCell.m */; };
+		7C873B201F0BD57A00C3DDD1 /* TNChannelsListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873B1E1F0BD57A00C3DDD1 /* TNChannelsListView.m */; };
+		7C873B231F0BE1FF00C3DDD1 /* TNChannelListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873B221F0BE1FF00C3DDD1 /* TNChannelListHeaderView.m */; };
+		7C873B251F0BF66300C3DDD1 /* TNChannelListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C873B241F0BF66300C3DDD1 /* TNChannelListHeaderView.xib */; };
+		7C873B2D1F0D25A100C3DDD1 /* TNHomeNewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873B2C1F0D25A100C3DDD1 /* TNHomeNewsVC.m */; };
+		7C873B331F0D46C100C3DDD1 /* TNNewsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873B321F0D46C100C3DDD1 /* TNNewsList.m */; };
+		7C873B361F0D47B400C3DDD1 /* TNNewsMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873B351F0D47B400C3DDD1 /* TNNewsMessage.m */; };
+		7C873B391F0D47C200C3DDD1 /* TNNewsTip.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873B381F0D47C200C3DDD1 /* TNNewsTip.m */; };
+		7C873B3C1F0D544E00C3DDD1 /* TNNewsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C873B3B1F0D544E00C3DDD1 /* TNNewsData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		055CF5D78E66B12D2803E60F /* Pods-TodayNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodayNews/Pods-TodayNews.release.xcconfig"; sourceTree = "<group>"; };
+		5DC7E5131993F3639D549F77 /* libPods-TodayNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TodayNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C873A801F0B541800C3DDD1 /* TodayNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C873A841F0B541800C3DDD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C873A861F0B541800C3DDD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TodayNews/AppDelegate.h; sourceTree = "<group>"; };
+		7C873A871F0B541800C3DDD1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TodayNews/AppDelegate.m; sourceTree = "<group>"; };
+		7C873A8D1F0B541800C3DDD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		7C873A8F1F0B541800C3DDD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TodayNews/Assets.xcassets; sourceTree = "<group>"; };
+		7C873A921F0B541800C3DDD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C873A941F0B541800C3DDD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TodayNews/Info.plist; sourceTree = "<group>"; };
+		7C873AA11F0B54A000C3DDD1 /* MTAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAPIClient.h; sourceTree = "<group>"; };
+		7C873AA21F0B54A000C3DDD1 /* MTAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAPIClient.m; sourceTree = "<group>"; };
+		7C873AA41F0B54A000C3DDD1 /* NSData+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Additions.h"; sourceTree = "<group>"; };
+		7C873AA51F0B54A000C3DDD1 /* NSData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Additions.m"; sourceTree = "<group>"; };
+		7C873AA71F0B54A000C3DDD1 /* NSDate+MTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MTExtension.h"; sourceTree = "<group>"; };
+		7C873AA81F0B54A000C3DDD1 /* NSDate+MTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MTExtension.m"; sourceTree = "<group>"; };
+		7C873AAA1F0B54A000C3DDD1 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		7C873AAB1F0B54A000C3DDD1 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		7C873AAD1F0B54A000C3DDD1 /* MTVersionCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTVersionCheck.h; sourceTree = "<group>"; };
+		7C873AAE1F0B54A000C3DDD1 /* MTVersionCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTVersionCheck.m; sourceTree = "<group>"; };
+		7C873AAF1F0B54A000C3DDD1 /* MTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTConstants.h; sourceTree = "<group>"; };
+		7C873AB21F0B54A000C3DDD1 /* MTHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHUDView.h; sourceTree = "<group>"; };
+		7C873AB31F0B54A000C3DDD1 /* MTHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTHUDView.m; sourceTree = "<group>"; };
+		7C873AB51F0B54A000C3DDD1 /* MTImageSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTImageSize.h; sourceTree = "<group>"; };
+		7C873AB61F0B54A000C3DDD1 /* MTImageSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTImageSize.m; sourceTree = "<group>"; };
+		7C873AB71F0B54A000C3DDD1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7C873ABE1F0B54A000C3DDD1 /* MTRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTRefreshFooter.h; sourceTree = "<group>"; };
+		7C873ABF1F0B54A000C3DDD1 /* MTRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTRefreshFooter.m; sourceTree = "<group>"; };
+		7C873AC01F0B54A000C3DDD1 /* MTRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTRefreshHeader.h; sourceTree = "<group>"; };
+		7C873AC11F0B54A000C3DDD1 /* MTRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTRefreshHeader.m; sourceTree = "<group>"; };
+		7C873ACF1F0B54A000C3DDD1 /* MTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTextView.h; sourceTree = "<group>"; };
+		7C873AD01F0B54A000C3DDD1 /* MTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTextView.m; sourceTree = "<group>"; };
+		7C873AD21F0B54A000C3DDD1 /* MTWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTWebVC.h; sourceTree = "<group>"; };
+		7C873AD31F0B54A000C3DDD1 /* MTWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTWebVC.m; sourceTree = "<group>"; };
+		7C873AD51F0B54A000C3DDD1 /* UIButton+touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+touch.h"; sourceTree = "<group>"; };
+		7C873AD61F0B54A000C3DDD1 /* UIButton+touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+touch.m"; sourceTree = "<group>"; };
+		7C873AD81F0B54A000C3DDD1 /* UIColor+MTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MTColor.h"; sourceTree = "<group>"; };
+		7C873AD91F0B54A000C3DDD1 /* UIColor+MTColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MTColor.m"; sourceTree = "<group>"; };
+		7C873ADB1F0B54A000C3DDD1 /* UITableViewAdditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewAdditional.h; sourceTree = "<group>"; };
+		7C873ADC1F0B54A000C3DDD1 /* UITableViewAdditional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewAdditional.m; sourceTree = "<group>"; };
+		7C873ADE1F0B54A000C3DDD1 /* UIView+MTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MTExtension.h"; sourceTree = "<group>"; };
+		7C873ADF1F0B54A000C3DDD1 /* UIView+MTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MTExtension.m"; sourceTree = "<group>"; };
+		7C873AE11F0B54A000C3DDD1 /* UIViewController+MTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MTExtension.h"; sourceTree = "<group>"; };
+		7C873AE21F0B54A000C3DDD1 /* UIViewController+MTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MTExtension.m"; sourceTree = "<group>"; };
+		7C873AFD1F0B561000C3DDD1 /* MTMenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMenuBar.h; sourceTree = "<group>"; };
+		7C873AFE1F0B561000C3DDD1 /* MTMenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMenuBar.m; sourceTree = "<group>"; };
+		7C873AFF1F0B561000C3DDD1 /* MTMenuBarHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMenuBarHeader.h; sourceTree = "<group>"; };
+		7C873B001F0B561000C3DDD1 /* MTMenuBarTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMenuBarTitleView.h; sourceTree = "<group>"; };
+		7C873B011F0B561000C3DDD1 /* MTMenuBarTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMenuBarTitleView.m; sourceTree = "<group>"; };
+		7C873B021F0B561000C3DDD1 /* MTMenuBarTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTMenuBarTitleView.xib; sourceTree = "<group>"; };
+		7C873B061F0B7C0600C3DDD1 /* TNHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNHomeVC.h; sourceTree = "<group>"; };
+		7C873B071F0B7C0600C3DDD1 /* TNHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNHomeVC.m; sourceTree = "<group>"; };
+		7C873B0A1F0B881C00C3DDD1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = TodayNews/PrefixHeader.pch; sourceTree = "<group>"; };
+		7C873B0C1F0B8DDE00C3DDD1 /* TNHomeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNHomeService.h; sourceTree = "<group>"; };
+		7C873B0D1F0B8DDE00C3DDD1 /* TNHomeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNHomeService.m; sourceTree = "<group>"; };
+		7C873B0F1F0BB4A500C3DDD1 /* https.cer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = https.cer; sourceTree = "<group>"; };
+		7C873B111F0BB77A00C3DDD1 /* TNChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNChannel.h; sourceTree = "<group>"; };
+		7C873B121F0BB77A00C3DDD1 /* TNChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNChannel.m; sourceTree = "<group>"; };
+		7C873B1B1F0BD57A00C3DDD1 /* TNChannelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNChannelCell.h; sourceTree = "<group>"; };
+		7C873B1C1F0BD57A00C3DDD1 /* TNChannelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNChannelCell.m; sourceTree = "<group>"; };
+		7C873B1D1F0BD57A00C3DDD1 /* TNChannelsListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNChannelsListView.h; sourceTree = "<group>"; };
+		7C873B1E1F0BD57A00C3DDD1 /* TNChannelsListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNChannelsListView.m; sourceTree = "<group>"; };
+		7C873B211F0BE1FF00C3DDD1 /* TNChannelListHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNChannelListHeaderView.h; sourceTree = "<group>"; };
+		7C873B221F0BE1FF00C3DDD1 /* TNChannelListHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNChannelListHeaderView.m; sourceTree = "<group>"; };
+		7C873B241F0BF66300C3DDD1 /* TNChannelListHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNChannelListHeaderView.xib; sourceTree = "<group>"; };
+		7C873B2B1F0D25A100C3DDD1 /* TNHomeNewsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNHomeNewsVC.h; sourceTree = "<group>"; };
+		7C873B2C1F0D25A100C3DDD1 /* TNHomeNewsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNHomeNewsVC.m; sourceTree = "<group>"; };
+		7C873B311F0D46C100C3DDD1 /* TNNewsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNewsList.h; sourceTree = "<group>"; };
+		7C873B321F0D46C100C3DDD1 /* TNNewsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNNewsList.m; sourceTree = "<group>"; };
+		7C873B341F0D47B400C3DDD1 /* TNNewsMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNewsMessage.h; sourceTree = "<group>"; };
+		7C873B351F0D47B400C3DDD1 /* TNNewsMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNNewsMessage.m; sourceTree = "<group>"; };
+		7C873B371F0D47C200C3DDD1 /* TNNewsTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNewsTip.h; sourceTree = "<group>"; };
+		7C873B381F0D47C200C3DDD1 /* TNNewsTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNNewsTip.m; sourceTree = "<group>"; };
+		7C873B3A1F0D544E00C3DDD1 /* TNNewsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNewsData.h; sourceTree = "<group>"; };
+		7C873B3B1F0D544E00C3DDD1 /* TNNewsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNNewsData.m; sourceTree = "<group>"; };
+		85B5FDDD5B11617D6F8D3546 /* Pods-TodayNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodayNews/Pods-TodayNews.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C873A7D1F0B541800C3DDD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFB8945E4B0A574300E937A /* libPods-TodayNews.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26733B4B5A5357BFC3931959 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85B5FDDD5B11617D6F8D3546 /* Pods-TodayNews.debug.xcconfig */,
+				055CF5D78E66B12D2803E60F /* Pods-TodayNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		54B3D3351BE41CF79E21271A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DC7E5131993F3639D549F77 /* libPods-TodayNews.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C873A771F0B541800C3DDD1 = {
+			isa = PBXGroup;
+			children = (
+				7C873A821F0B541800C3DDD1 /* TodayNews */,
+				7C873A811F0B541800C3DDD1 /* Products */,
+				26733B4B5A5357BFC3931959 /* Pods */,
+				54B3D3351BE41CF79E21271A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7C873A811F0B541800C3DDD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C873A801F0B541800C3DDD1 /* TodayNews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C873A821F0B541800C3DDD1 /* TodayNews */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AFB1F0B54BA00C3DDD1 /* Others */,
+				7C873A9E1F0B54A000C3DDD1 /* Utilities */,
+				7C873B0B1F0B8DC700C3DDD1 /* Services */,
+				7C873A9A1F0B547300C3DDD1 /* Home */,
+				7C873A831F0B541800C3DDD1 /* Supporting Files */,
+			);
+			path = TodayNews;
+			sourceTree = "<group>";
+		};
+		7C873A831F0B541800C3DDD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C873A841F0B541800C3DDD1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C873A9A1F0B547300C3DDD1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7C873A9B1F0B547300C3DDD1 /* Controllers */,
+				7C873A9C1F0B547300C3DDD1 /* Models */,
+				7C873A9D1F0B547300C3DDD1 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7C873A9B1F0B547300C3DDD1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C873B061F0B7C0600C3DDD1 /* TNHomeVC.h */,
+				7C873B071F0B7C0600C3DDD1 /* TNHomeVC.m */,
+				7C873B2B1F0D25A100C3DDD1 /* TNHomeNewsVC.h */,
+				7C873B2C1F0D25A100C3DDD1 /* TNHomeNewsVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7C873A9C1F0B547300C3DDD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C873B111F0BB77A00C3DDD1 /* TNChannel.h */,
+				7C873B121F0BB77A00C3DDD1 /* TNChannel.m */,
+				7C873B311F0D46C100C3DDD1 /* TNNewsList.h */,
+				7C873B321F0D46C100C3DDD1 /* TNNewsList.m */,
+				7C873B341F0D47B400C3DDD1 /* TNNewsMessage.h */,
+				7C873B351F0D47B400C3DDD1 /* TNNewsMessage.m */,
+				7C873B3A1F0D544E00C3DDD1 /* TNNewsData.h */,
+				7C873B3B1F0D544E00C3DDD1 /* TNNewsData.m */,
+				7C873B371F0D47C200C3DDD1 /* TNNewsTip.h */,
+				7C873B381F0D47C200C3DDD1 /* TNNewsTip.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C873A9D1F0B547300C3DDD1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C873A8C1F0B541800C3DDD1 /* Home.storyboard */,
+				7C873AFC1F0B561000C3DDD1 /* MenuBar */,
+				7C873B1A1F0BD57A00C3DDD1 /* TNChannelListView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C873A9E1F0B54A000C3DDD1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7C873A9F1F0B54A000C3DDD1 /* FoundationAdditions */,
+				7C873AAF1F0B54A000C3DDD1 /* MTConstants.h */,
+				7C873AB01F0B54A000C3DDD1 /* UIKitAdditions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7C873A9F1F0B54A000C3DDD1 /* FoundationAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AA01F0B54A000C3DDD1 /* MTAPIClient */,
+				7C873AA31F0B54A000C3DDD1 /* NSDataCategory */,
+				7C873AA61F0B54A000C3DDD1 /* NSDateCategory */,
+				7C873AA91F0B54A000C3DDD1 /* NSStringCategory */,
+				7C873AAC1F0B54A000C3DDD1 /* Version */,
+			);
+			path = FoundationAdditions;
+			sourceTree = "<group>";
+		};
+		7C873AA01F0B54A000C3DDD1 /* MTAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AA11F0B54A000C3DDD1 /* MTAPIClient.h */,
+				7C873AA21F0B54A000C3DDD1 /* MTAPIClient.m */,
+			);
+			path = MTAPIClient;
+			sourceTree = "<group>";
+		};
+		7C873AA31F0B54A000C3DDD1 /* NSDataCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AA41F0B54A000C3DDD1 /* NSData+Additions.h */,
+				7C873AA51F0B54A000C3DDD1 /* NSData+Additions.m */,
+			);
+			path = NSDataCategory;
+			sourceTree = "<group>";
+		};
+		7C873AA61F0B54A000C3DDD1 /* NSDateCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AA71F0B54A000C3DDD1 /* NSDate+MTExtension.h */,
+				7C873AA81F0B54A000C3DDD1 /* NSDate+MTExtension.m */,
+			);
+			path = NSDateCategory;
+			sourceTree = "<group>";
+		};
+		7C873AA91F0B54A000C3DDD1 /* NSStringCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AAA1F0B54A000C3DDD1 /* NSString+Additions.h */,
+				7C873AAB1F0B54A000C3DDD1 /* NSString+Additions.m */,
+			);
+			path = NSStringCategory;
+			sourceTree = "<group>";
+		};
+		7C873AAC1F0B54A000C3DDD1 /* Version */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AAD1F0B54A000C3DDD1 /* MTVersionCheck.h */,
+				7C873AAE1F0B54A000C3DDD1 /* MTVersionCheck.m */,
+			);
+			path = Version;
+			sourceTree = "<group>";
+		};
+		7C873AB01F0B54A000C3DDD1 /* UIKitAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AB11F0B54A000C3DDD1 /* MTHUDView */,
+				7C873AB41F0B54A000C3DDD1 /* MTImageSize */,
+				7C873ABD1F0B54A000C3DDD1 /* MTRefreshControl */,
+				7C873ACE1F0B54A000C3DDD1 /* MTTextView */,
+				7C873AD11F0B54A000C3DDD1 /* MTWebVC */,
+				7C873AD41F0B54A000C3DDD1 /* UIButtonCategory */,
+				7C873AD71F0B54A000C3DDD1 /* UIColorCategory */,
+				7C873ADA1F0B54A000C3DDD1 /* UITableView */,
+				7C873ADD1F0B54A000C3DDD1 /* UIViewCategory */,
+				7C873AE01F0B54A000C3DDD1 /* UIViewController */,
+			);
+			path = UIKitAdditions;
+			sourceTree = "<group>";
+		};
+		7C873AB11F0B54A000C3DDD1 /* MTHUDView */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AB21F0B54A000C3DDD1 /* MTHUDView.h */,
+				7C873AB31F0B54A000C3DDD1 /* MTHUDView.m */,
+			);
+			path = MTHUDView;
+			sourceTree = "<group>";
+		};
+		7C873AB41F0B54A000C3DDD1 /* MTImageSize */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AB51F0B54A000C3DDD1 /* MTImageSize.h */,
+				7C873AB61F0B54A000C3DDD1 /* MTImageSize.m */,
+				7C873AB71F0B54A000C3DDD1 /* README.md */,
+			);
+			path = MTImageSize;
+			sourceTree = "<group>";
+		};
+		7C873ABD1F0B54A000C3DDD1 /* MTRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				7C873ABE1F0B54A000C3DDD1 /* MTRefreshFooter.h */,
+				7C873ABF1F0B54A000C3DDD1 /* MTRefreshFooter.m */,
+				7C873AC01F0B54A000C3DDD1 /* MTRefreshHeader.h */,
+				7C873AC11F0B54A000C3DDD1 /* MTRefreshHeader.m */,
+			);
+			path = MTRefreshControl;
+			sourceTree = "<group>";
+		};
+		7C873ACE1F0B54A000C3DDD1 /* MTTextView */ = {
+			isa = PBXGroup;
+			children = (
+				7C873ACF1F0B54A000C3DDD1 /* MTTextView.h */,
+				7C873AD01F0B54A000C3DDD1 /* MTTextView.m */,
+			);
+			path = MTTextView;
+			sourceTree = "<group>";
+		};
+		7C873AD11F0B54A000C3DDD1 /* MTWebVC */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AD21F0B54A000C3DDD1 /* MTWebVC.h */,
+				7C873AD31F0B54A000C3DDD1 /* MTWebVC.m */,
+			);
+			path = MTWebVC;
+			sourceTree = "<group>";
+		};
+		7C873AD41F0B54A000C3DDD1 /* UIButtonCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AD51F0B54A000C3DDD1 /* UIButton+touch.h */,
+				7C873AD61F0B54A000C3DDD1 /* UIButton+touch.m */,
+			);
+			path = UIButtonCategory;
+			sourceTree = "<group>";
+		};
+		7C873AD71F0B54A000C3DDD1 /* UIColorCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AD81F0B54A000C3DDD1 /* UIColor+MTColor.h */,
+				7C873AD91F0B54A000C3DDD1 /* UIColor+MTColor.m */,
+			);
+			path = UIColorCategory;
+			sourceTree = "<group>";
+		};
+		7C873ADA1F0B54A000C3DDD1 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				7C873ADB1F0B54A000C3DDD1 /* UITableViewAdditional.h */,
+				7C873ADC1F0B54A000C3DDD1 /* UITableViewAdditional.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		7C873ADD1F0B54A000C3DDD1 /* UIViewCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7C873ADE1F0B54A000C3DDD1 /* UIView+MTExtension.h */,
+				7C873ADF1F0B54A000C3DDD1 /* UIView+MTExtension.m */,
+			);
+			path = UIViewCategory;
+			sourceTree = "<group>";
+		};
+		7C873AE01F0B54A000C3DDD1 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AE11F0B54A000C3DDD1 /* UIViewController+MTExtension.h */,
+				7C873AE21F0B54A000C3DDD1 /* UIViewController+MTExtension.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		7C873AFB1F0B54BA00C3DDD1 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				7C873B0F1F0BB4A500C3DDD1 /* https.cer */,
+				7C873B0A1F0B881C00C3DDD1 /* PrefixHeader.pch */,
+				7C873A861F0B541800C3DDD1 /* AppDelegate.h */,
+				7C873A871F0B541800C3DDD1 /* AppDelegate.m */,
+				7C873A8F1F0B541800C3DDD1 /* Assets.xcassets */,
+				7C873A911F0B541800C3DDD1 /* LaunchScreen.storyboard */,
+				7C873A941F0B541800C3DDD1 /* Info.plist */,
+			);
+			name = Others;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7C873AFC1F0B561000C3DDD1 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				7C873AFD1F0B561000C3DDD1 /* MTMenuBar.h */,
+				7C873AFE1F0B561000C3DDD1 /* MTMenuBar.m */,
+				7C873AFF1F0B561000C3DDD1 /* MTMenuBarHeader.h */,
+				7C873B001F0B561000C3DDD1 /* MTMenuBarTitleView.h */,
+				7C873B011F0B561000C3DDD1 /* MTMenuBarTitleView.m */,
+				7C873B021F0B561000C3DDD1 /* MTMenuBarTitleView.xib */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		7C873B0B1F0B8DC700C3DDD1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7C873B0C1F0B8DDE00C3DDD1 /* TNHomeService.h */,
+				7C873B0D1F0B8DDE00C3DDD1 /* TNHomeService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7C873B1A1F0BD57A00C3DDD1 /* TNChannelListView */ = {
+			isa = PBXGroup;
+			children = (
+				7C873B1B1F0BD57A00C3DDD1 /* TNChannelCell.h */,
+				7C873B1C1F0BD57A00C3DDD1 /* TNChannelCell.m */,
+				7C873B1D1F0BD57A00C3DDD1 /* TNChannelsListView.h */,
+				7C873B1E1F0BD57A00C3DDD1 /* TNChannelsListView.m */,
+				7C873B211F0BE1FF00C3DDD1 /* TNChannelListHeaderView.h */,
+				7C873B221F0BE1FF00C3DDD1 /* TNChannelListHeaderView.m */,
+				7C873B241F0BF66300C3DDD1 /* TNChannelListHeaderView.xib */,
+			);
+			path = TNChannelListView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C873A7F1F0B541800C3DDD1 /* TodayNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C873A971F0B541800C3DDD1 /* Build configuration list for PBXNativeTarget "TodayNews" */;
+			buildPhases = (
+				758C8F897C23B82D9741EC7E /* [CP] Check Pods Manifest.lock */,
+				7C873A7C1F0B541800C3DDD1 /* Sources */,
+				7C873A7D1F0B541800C3DDD1 /* Frameworks */,
+				7C873A7E1F0B541800C3DDD1 /* Resources */,
+				12FCB216BFBDC7C90009F887 /* [CP] Embed Pods Frameworks */,
+				E6FB76EB9556E8C9479CF473 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayNews;
+			productName = TodayNews;
+			productReference = 7C873A801F0B541800C3DDD1 /* TodayNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C873A781F0B541800C3DDD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Freya;
+				TargetAttributes = {
+					7C873A7F1F0B541800C3DDD1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 7C873A7B1F0B541800C3DDD1 /* Build configuration list for PBXProject "TodayNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C873A771F0B541800C3DDD1;
+			productRefGroup = 7C873A811F0B541800C3DDD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C873A7F1F0B541800C3DDD1 /* TodayNews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C873A7E1F0B541800C3DDD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C873A931F0B541800C3DDD1 /* LaunchScreen.storyboard in Resources */,
+				7C873A901F0B541800C3DDD1 /* Assets.xcassets in Resources */,
+				7C873B101F0BB4A500C3DDD1 /* https.cer in Resources */,
+				7C873B251F0BF66300C3DDD1 /* TNChannelListHeaderView.xib in Resources */,
+				7C873A8E1F0B541800C3DDD1 /* Home.storyboard in Resources */,
+				7C873B051F0B561000C3DDD1 /* MTMenuBarTitleView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12FCB216BFBDC7C90009F887 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TodayNews/Pods-TodayNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		758C8F897C23B82D9741EC7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6FB76EB9556E8C9479CF473 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TodayNews/Pods-TodayNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C873A7C1F0B541800C3DDD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C873B3C1F0D544E00C3DDD1 /* TNNewsData.m in Sources */,
+				7C873B361F0D47B400C3DDD1 /* TNNewsMessage.m in Sources */,
+				7C873AE71F0B54A000C3DDD1 /* MTVersionCheck.m in Sources */,
+				7C873AE81F0B54A000C3DDD1 /* MTHUDView.m in Sources */,
+				7C873B0E1F0B8DDE00C3DDD1 /* TNHomeService.m in Sources */,
+				7C873AE61F0B54A000C3DDD1 /* NSString+Additions.m in Sources */,
+				7C873AF61F0B54A000C3DDD1 /* UIButton+touch.m in Sources */,
+				7C873AF71F0B54A000C3DDD1 /* UIColor+MTColor.m in Sources */,
+				7C873AE51F0B54A000C3DDD1 /* NSDate+MTExtension.m in Sources */,
+				7C873AEE1F0B54A000C3DDD1 /* MTRefreshHeader.m in Sources */,
+				7C873AED1F0B54A000C3DDD1 /* MTRefreshFooter.m in Sources */,
+				7C873B081F0B7C0600C3DDD1 /* TNHomeVC.m in Sources */,
+				7C873AE91F0B54A000C3DDD1 /* MTImageSize.m in Sources */,
+				7C873A881F0B541800C3DDD1 /* AppDelegate.m in Sources */,
+				7C873AE41F0B54A000C3DDD1 /* NSData+Additions.m in Sources */,
+				7C873B231F0BE1FF00C3DDD1 /* TNChannelListHeaderView.m in Sources */,
+				7C873AF51F0B54A000C3DDD1 /* MTWebVC.m in Sources */,
+				7C873B201F0BD57A00C3DDD1 /* TNChannelsListView.m in Sources */,
+				7C873AF41F0B54A000C3DDD1 /* MTTextView.m in Sources */,
+				7C873B331F0D46C100C3DDD1 /* TNNewsList.m in Sources */,
+				7C873B2D1F0D25A100C3DDD1 /* TNHomeNewsVC.m in Sources */,
+				7C873B391F0D47C200C3DDD1 /* TNNewsTip.m in Sources */,
+				7C873B031F0B561000C3DDD1 /* MTMenuBar.m in Sources */,
+				7C873AE31F0B54A000C3DDD1 /* MTAPIClient.m in Sources */,
+				7C873B131F0BB77A00C3DDD1 /* TNChannel.m in Sources */,
+				7C873B041F0B561000C3DDD1 /* MTMenuBarTitleView.m in Sources */,
+				7C873AF91F0B54A000C3DDD1 /* UIView+MTExtension.m in Sources */,
+				7C873AFA1F0B54A000C3DDD1 /* UIViewController+MTExtension.m in Sources */,
+				7C873AEA1F0B54A000C3DDD1 /* README.md in Sources */,
+				7C873B1F1F0BD57A00C3DDD1 /* TNChannelCell.m in Sources */,
+				7C873A851F0B541800C3DDD1 /* main.m in Sources */,
+				7C873AF81F0B54A000C3DDD1 /* UITableViewAdditional.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7C873A8C1F0B541800C3DDD1 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C873A8D1F0B541800C3DDD1 /* Base */,
+			);
+			name = Home.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7C873A911F0B541800C3DDD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C873A921F0B541800C3DDD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = TodayNews;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C873A951F0B541800C3DDD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7C873A961F0B541800C3DDD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C873A981F0B541800C3DDD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85B5FDDD5B11617D6F8D3546 /* Pods-TodayNews.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TodayNews/PrefixHeader.pch;
+				INFOPLIST_FILE = TodayNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vchaoxi.TodayNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		7C873A991F0B541800C3DDD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 055CF5D78E66B12D2803E60F /* Pods-TodayNews.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TodayNews/PrefixHeader.pch;
+				INFOPLIST_FILE = TodayNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vchaoxi.TodayNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C873A7B1F0B541800C3DDD1 /* Build configuration list for PBXProject "TodayNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C873A951F0B541800C3DDD1 /* Debug */,
+				7C873A961F0B541800C3DDD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C873A971F0B541800C3DDD1 /* Build configuration list for PBXNativeTarget "TodayNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C873A981F0B541800C3DDD1 /* Debug */,
+				7C873A991F0B541800C3DDD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C873A781F0B541800C3DDD1 /* Project object */;
+}
