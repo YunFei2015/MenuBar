@@ -32,6 +32,7 @@
         self.channel = channel;
         self.view.backgroundColor = colors[index % 3];
 //        [self.view addSubview:self.tableView];
+        
     }
     return self;
 }
